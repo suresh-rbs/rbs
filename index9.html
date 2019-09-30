@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Swiper Slider Plain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css'>
+<link rel="stylesheet" href="./style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+	<style>
+
+body {
+ 
+    background-image: linear-gradient(to bottom, rgba(8, 118, 255, 0.52), rgba(133, 20, 255, 0.88)), url(images/tr1.jpg);
+width: 100%;
+height: 640px;
+background-size: cover;
+   background-position:50% 50%;
+}
+
+.icon_topbar
+{
+	padding: 15px;
+    color: #fff;
+    font-size: 15px;
+}
+.cnttxt
+{
+	top: 45%;
+    position: absolute;
+    color: #fff;
+    padding: 25px;
+}
+
+.uicnt
+{
+	top: -16%;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 25px;
+    margin: 30px;
+    width: 297px;
+    height: 156px;
+}
+
+/*txt input style
+*/
+
+
+.form__group {
+  position: relative;
+  padding: 15px 35px 0;
+  margin-top: 15px;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+border-bottom: 1px solid #d2d2d2;
+  outline: 0;
+  font-size: 16px;
+      color: #403939;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  font-weight: bold;
+}
+
+.form__field::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form__field:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form__field::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 16px;
+  cursor: text;
+  top: 20px;
+}
+
+label,
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+.form__field:focus ~ .form__label {
+  color: #c4c4c5;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+    border-bottom: 2px solid #3f17c7;
+
+}
+
+/*txt input style end*/
+.icon_arrow
+{
+float: right;
+    margin: -14px;
+    border: 1px solid #757373;
+    border-radius: 50%;
+    padding: 7px;
+    margin-top: -16px;
+    background-color: #fff;
+    transform: rotate(90deg);
+    font-size: 13px;
+    color: #adabab;
+}
+
+.icon_arrow1
+{
+float: right;
+    margin: -14px;
+
+ 
+    padding: 7px;
+    margin-top: -16px;
+    background-color: #fff;
+  
+    font-size: 17px;
+    color: #adabab;
+}
+.bgwhite
+{
+	background-color:#fff;
+	margin-top:37%;
+	height:100%;
+}
+
+.bgwhite1
+{
+		background-color:#f7f7f7;
+
+	height:100%;
+	    margin: 10%;
+  
+  margin-top: -87px;
+
+	    z-index: 9;
+    position: absolute;
+    width: 80%;
+	-webkit-box-shadow: -4px 2px 13px 2px rgba(0,0,0,0.13);
+-moz-box-shadow: -4px 2px 13px 2px rgba(0,0,0,0.13);
+box-shadow: -4px 2px 13px 2px rgba(0,0,0,0.13);
+border-radius: 20px;
+}
+
+.rtnbtn
+{
+	background-color: #3822b3;
+    color: #fff;
+    border: 0px;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    position: absolute;
+    right: 37px;
+}
+.black
+{
+	color:#000000;
+}
+.fnttrn
+{
+	    right: 0px !important;
+    width: 87% !important;
+    margin: 0% 5% 0% 5% !important;
+}
+.cntdata
+{
+	background-color: #fff;
+    /* border: 1px solid red; */
+    padding: 11px;
+    /* margin: 20px; */
+   
+    margin-top: -17px;
+    -webkit-box-shadow: 0px 6px 20px -3px rgba(0,0,0,0.41);
+    -moz-box-shadow: 0px 6px 20px -3px rgba(0,0,0,0.41);
+    /* box-shadow: 0px 6px 20px -3px rgba(0,0,0,0.41); */
+    -webkit-box-shadow: 0px 6px 20px -3px rgba(0,0,0,0.09);
+    -moz-box-shadow: 0px 6px 20px -3px rgba(0,0,0,0.09);
+    box-shadow: 0px 6px 20px -3px rgba(0,0,0,0.09);
+   
+	    margin-left: -15px;
+    margin-right: -15px;
+}
+.cntd1
+{
+	font-size: 0.7rem;
+    color: #858e96;
+}
+.ST
+{
+	color: #bfbebe;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.txttitle
+{
+	margin-top: -150px;
+    font-size: 2rem;
+    margin-left: 20px;
+    color: #f2f2f5;
+}
+
+.txttitle2
+{
+	margin-top: -107px;
+
+    margin-left: 20px;
+    color: #d9d9e4;
+}
+
+.bokdet
+{
+	display:block;
+}
+
+.bokdet div
+{
+	display:inline-block;
+}
+.divstart
+{
+	width: 18%;
+    /* top: -13px; */
+    bottom: 24px;
+    position: relative;
+	    top: -25px;
+   left:8px;
+}
+.startspan
+{
+	color: #bbb6b6;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.time
+{
+	color: #7367f0;
+    font-weight: bold;
+    font-size: 13px;
+}
+.topcnt
+{
+	width: 45%;
+    position: absolute;
+    text-align: center;
+	font-size: 12px;
+    color: #d6d1d1;
+    font-weight: 600;
+    margin-top: 4px;
+}
+.btmcnt
+{
+   width: 90%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+	font-size: 12px;
+    color: #d6d1d1;
+    font-weight: 600;
+	top: -7px;
+}
+
+.flighticon
+{
+	    position: absolute;
+    margin-top: 9px;
+    transform: rotate(43deg);
+    left: 45%;
+}
+.circleicon1
+{
+	    margin-top: 10px;
+    position: absolute;
+    left: 75px;
+    color: #d8d1d1;
+    font-size: 13px;
+}
+
+.circleicon2
+{
+	        margin-top: -22px;
+    position: absolute;
+    right: 79px;
+    color: #d8d1d1;
+    font-size: 13px;
+}
+
+.hrcss
+{
+	margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+.fontstyle
+{
+	font-size: 12px;
+    color: #c7bfbf;
+    font-weight: 600;
+}
+.fontstyle div span i
+{
+	   padding: 1px;
+    font-size: 10px;
+    padding-right: 6px;
+}
+
+
+
+
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready( function() {
+    var div = jQuery(".uicnt");
+    
+    div.animate({
+           left: '0',    
+                top: '+=' + ($(window).height()-122)               
+            }, 1000, function () {
+                // Animation complete.
+            });
+});
+</script>
+
+
+
+</head>
+<body>
+
+<div class="bgwhite">
+<div class="form__group">
+  
+  <label for="email" class="form__label txttitle">NewDelhi To <span style="text-decoration:underline;">Agra</span></label>
+  <label for="email" class="form__label txttitle2">6 June 2019</label>
+</div>
+<div class="bgwhite1">
+<div class="form__group">
+
+  <label for="email" style="width:80%;" class="form__label"><span style="color: #000;
+    font-weight: 500;
+    font-size: 15px;">12 Trains Found</span><span style="float:right;"><i style="    font-size: 11px;
+    padding: 10px;" class="fa fa-exchange"></i>Filter</span></label>
+   
+</div>
+
+
+
+<div class="form__group">
+</div>
+
+
+
+
+<div class="form__group">
+
+<div class="cntdata">
+
+<p style="font-weight:700; margin-bottom:0px;">Intercity Express(14211)</p>
+
+<div class="bokdet">
+<div class="divstart">
+<span class="startspan">DEL</span><br>
+<span class="time">13:00</span>
+</div>
+<div style="width:60%;">
+<span class="topcnt">2 hr 10 min</span><br>
+<span><i class="fa fa-plane flighticon" aria-hidden="true"></i><i class="fa fa-circle-o circleicon1" aria-hidden="true"></i><hr><i class="fa fa-circle-o circleicon2" aria-hidden="true"></i></span>
+<span class="btmcnt">Non Stop</span>
+</div>
+<div class="divstart">
+<span class="startspan">BOM</span><br>
+<span class="time">15:10</span>
+</div>
+</div>
+
+<div>
+<hr class="hrcss">
+</div>
+
+<div class="bokdet fontstyle">
+<div  style="width:18%;"><span><i class="fa fa-plane" aria-hidden="true"></i>GE189</span></div>
+<div style="width:56%; text-align:center"><span><i class="fa fa-question-circle" aria-hidden="true"></i>Flight Info</span></div>
+<div style="width:21%; color:#000;"><span><i class="fa fa-inr" aria-hidden="true"></i>7562</span></div>
+</div>
+
+
+
+</div>
+</div>
+
+<div class="form__group">
+
+<div class="cntdata">
+
+<p style="font-weight:700; margin-bottom:0px;">Intercity Express(14211)</p>
+
+<div class="bokdet">
+<div class="divstart">
+<span class="startspan">DEL</span><br>
+<span class="time">13:00</span>
+</div>
+<div style="width:60%;">
+<span class="topcnt">2 hr 10 min</span><br>
+<span><i class="fa fa-plane flighticon" aria-hidden="true"></i><i class="fa fa-circle-o circleicon1" aria-hidden="true"></i><hr><i class="fa fa-circle-o circleicon2" aria-hidden="true"></i></span>
+<span class="btmcnt">Non Stop</span>
+</div>
+<div class="divstart">
+<span class="startspan">BOM</span><br>
+<span class="time">15:10</span>
+</div>
+</div>
+
+<div>
+<hr class="hrcss">
+</div>
+
+<div class="bokdet fontstyle">
+<div  style="width:18%;"><span><i class="fa fa-plane" aria-hidden="true"></i>GE189</span></div>
+<div style="width:56%; text-align:center"><span><i class="fa fa-question-circle" aria-hidden="true"></i>Flight Info</span></div>
+<div style="width:21%; color:#000;"><span><i class="fa fa-inr" aria-hidden="true"></i>7562</span></div>
+</div>
+
+
+
+</div>
+</div>
+
+<div class="form__group">
+
+<div class="cntdata">
+
+<p style="font-weight:700; margin-bottom:0px;">Intercity Express(14211)</p>
+
+<div class="bokdet">
+<div class="divstart">
+<span class="startspan">DEL</span><br>
+<span class="time">13:00</span>
+</div>
+<div style="width:60%;">
+<span class="topcnt">2 hr 10 min</span><br>
+<span><i class="fa fa-plane flighticon" aria-hidden="true"></i><i class="fa fa-circle-o circleicon1" aria-hidden="true"></i><hr><i class="fa fa-circle-o circleicon2" aria-hidden="true"></i></span>
+<span class="btmcnt">Non Stop</span>
+</div>
+<div class="divstart">
+<span class="startspan">BOM</span><br>
+<span class="time">15:10</span>
+</div>
+</div>
+
+<div>
+<hr class="hrcss">
+</div>
+
+<div class="bokdet fontstyle">
+<div  style="width:18%;"><span><i class="fa fa-plane" aria-hidden="true"></i>GE189</span></div>
+<div style="width:56%; text-align:center"><span><i class="fa fa-question-circle" aria-hidden="true"></i>Flight Info</span></div>
+<div style="width:21%; color:#000;"><span><i class="fa fa-inr" aria-hidden="true"></i>7562</span></div>
+</div>
+
+
+
+</div>
+</div>
+
+<div class="form__group">
+
+<div class="cntdata">
+
+<p style="font-weight:700; margin-bottom:0px;">Intercity Express(14211)</p>
+
+<div class="bokdet">
+<div class="divstart">
+<span class="startspan">DEL</span><br>
+<span class="time">13:00</span>
+</div>
+<div style="width:60%;">
+<span class="topcnt">2 hr 10 min</span><br>
+<span><i class="fa fa-plane flighticon" aria-hidden="true"></i><i class="fa fa-circle-o circleicon1" aria-hidden="true"></i><hr><i class="fa fa-circle-o circleicon2" aria-hidden="true"></i></span>
+<span class="btmcnt">Non Stop</span>
+</div>
+<div class="divstart">
+<span class="startspan">BOM</span><br>
+<span class="time">15:10</span>
+</div>
+</div>
+
+<div>
+<hr class="hrcss">
+</div>
+
+<div class="bokdet fontstyle">
+<div  style="width:18%;"><span><i class="fa fa-plane" aria-hidden="true"></i>GE189</span></div>
+<div style="width:56%; text-align:center"><span><i class="fa fa-question-circle" aria-hidden="true"></i>Flight Info</span></div>
+<div style="width:21%; color:#000;"><span><i class="fa fa-inr" aria-hidden="true"></i>7562</span></div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>
